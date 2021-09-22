@@ -703,7 +703,7 @@ namespace BoletoNet
                 
                 detalhe += Utils.FormatCode(boleto.IOF.ToString(), 15);//Posição 166 a 180   -  Valor do IOF a ser Recolhido
                 detalhe += Utils.FormatCode(boleto.Abatimento.ToString(), 15);//Posição 181 a 195   - Valor do Abatimento
-                detalhe += Utils.FormatCode(boleto.NumeroDocumento, " ", 25); //Posição 196 a 220  - Identificação do título
+                detalhe += Utils.FormatCode(boleto.NumeroControle, " ", 25); //Posição 196 a 220  - Identificação do título
                 detalhe += "3"; //Posição 221  - Código do protesto 3 = Nao Protestar
 
                 #region Instruções
